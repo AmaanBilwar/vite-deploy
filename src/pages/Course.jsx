@@ -34,10 +34,15 @@ const Course = () => {
         </div>
         <div></div>
       </div>
-      <div>Welcome to the Course Information Page</div>
+
+      <div className="text-2xl flex justify-center">
+        Welcome to the Course Information Page
+      </div>
       <div>
-        <h1>Course Description</h1>
-        <p>
+        <h1 className="flex justify-center align-center pt-4">
+          Course Description
+        </h1>
+        <p className="flex justify-center pl-80 pr-80 pt-6 pb-6">
           In this course, students will study basic web application development
           with front-end (HTML5, JavaScript, CSS) and back-end (PHP/MySQL). Web
           application vulnerabilities and attacks will be introduced and
@@ -48,9 +53,11 @@ const Course = () => {
         </p>
       </div>
       <div>
-        <h1>Topics (Tentative):</h1>
-        <p>
-          <ul>
+        <h1 className="flex justify-center align-center pt-4">
+          Topics (Tentative):
+        </h1>
+        <p className="flex justify-center pb-6">
+          <ul className="list-disc">
             <li>The Web and Web Applications</li>
             <li>Client-side Web Development with HTML5, CSS, and JavaScript</li>
             <li>
@@ -67,10 +74,14 @@ const Course = () => {
         </p>
       </div>
       <div>
-        <h1>Course Goals and Objectives:</h1>
-        <p>Students will have the ability to:</p>
-        <p>
-          <ul>
+        <h1 className="flex justify-center align-center pt-4">
+          Course Goals and Objectives:
+        </h1>
+        <p className="flex justify-center pb-6">
+          Students will have the ability to:
+        </p>
+        <p className="flex justify-center pl-80 pr-80 pb-6">
+          <ul className="list-disc">
             <li>
               obtain the ability and skills to effectively use state-of-the-art
               techniques in web application development and security tools for
@@ -98,12 +109,14 @@ const Course = () => {
         </p>
       </div>
       <div>
-        <h1>Course Outcomes:</h1>
-        <p>
+        <h1 className="flex justify-center align-center pt-4">
+          Course Outcomes:
+        </h1>
+        <p className="flex justify-center pb-6">
           Upon successful completion of this course, students will be able to:
         </p>
-        <p>
-          <ul>
+        <p className="flex justify-center pb-6">
+          <ul className="list-disc">
             <li>
               design, implement, and evaluate a web-based solution to meet a
               given set of computing requirements in the context of the
@@ -129,16 +142,22 @@ const Course = () => {
         </p>
       </div>
       <div>
-        <h1>Textbook</h1>
-        <p>
+        <h1 className="flex justify-center align-center pt-4">Textbook</h1>
+        <p className="flex justify-center pl-80 pr-80">
           There is no required textbook for this course. Lecture handouts are
           provided for every class. A good reference book (Free PDF online):
           “Learning PHP, MySQL & JavaScript: A Step-by-Step Guide to Creating
           Dynamic Websites,” Robin Nixon, O'Reilly Media, 6th Edition (2021).
           Additional readings will be posted correspondingly before lectures.
           Full syllabus and schedule are live on:{" "}
-          <a target="_blank" href="https://bit.ly/waph-sm24">
-            this website.
+        </p>
+        <p className="flex justify-center pl-80 pr-80">
+          <a
+            target="_blank"
+            className="no-underline hover:underline"
+            href="https://mailuc-my.sharepoint.com/:w:/g/personal/phungph_ucmail_uc_edu/EXzBMM1n8clNqqCARzpcEd0BRlsYC1fgwBFXIc_2BXNG6Q?e=V13cyc"
+          >
+            this website
           </a>
         </p>
       </div>
