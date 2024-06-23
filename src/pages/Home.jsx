@@ -86,9 +86,14 @@ const Home = () => {
             <div className="pt-12">
               <div className="flex justify-start">
                 <h1>
-                  PROJECTS <br /> <p>YT-sentiment-analysis</p>
+                  PROJECTS <br /> <p className="pt-4">YT-sentiment-analysis</p>
                   <p className="text-slate-500">
-                    express, node, react, youtube api, openai, tailwind
+                    express, node, react, youtube api, flask, openai, mongodb,
+                    tailwind
+                  </p>
+                  <p className="pt-4">spoti-helper</p>
+                  <p className="text-slate-500">
+                    express, node, react, spotify api, flask, monogdb, tailwind
                   </p>
                 </h1>
               </div>
@@ -96,7 +101,7 @@ const Home = () => {
             <div className="pt-12">
               <div className="flex justify-end">
                 <h1>
-                  <p className="pt-4"></p>
+                  <p className="pt-10"></p>
                   <p>
                     <a
                       className="m-2 text-decoration-line: none hover:underline"
