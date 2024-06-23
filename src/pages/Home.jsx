@@ -45,19 +45,50 @@ const Home = () => {
         <div className="sm:col-span-2"></div>
         <div className="sm:col-span-8">
           <div className="grid grid-cols-2">
-            <div className="flex  justify-start pl-2 pt-2">
+            <div className="flex  justify-start pl-2 pt-12">
               <h1>
-                Work
+                WORK
                 <br />
-                <div className="pt-2">Honeywell intelligrated</div>
+                <div className="pt-6">
+                  built a framework architecture @ Honeywell intelligrated
+                </div>
+                <div className=" text-slate-500 ">
+                  spring 2024 - java, springboot, docker, postgresql, rabbitmq,
+                  hazelcast
+                </div>
+                <div className="pt-4">
+                  wrote backend for a voice analysis web app @ University of
+                  Cincinnati
+                </div>
+                <div className="text-slate-500">
+                  fall 2023 - flask, golang, mongodb, reactjs, node
+                </div>
+                <div className="pt-4">
+                  worked on bearcat electric vehicle powertrain software -
+                  matlab, new eagle
+                </div>
+                <div className="text-slate-500">
+                  {" "}
+                  present - matlab, new eagle GCM48{" "}
+                </div>
               </h1>
             </div>
-            <div className="flex justify-end">
-              <p></p>
-            </div>
+            <div className="flex justify-end"></div>
           </div>
         </div>
 
+        <div className="col-span-2"></div>
+      </div>
+      <div className="grid grid-cols-12">
+        <div className="col-span-2"></div>
+        <div className="col-span-8">
+          <div className="grid grid-cols-2">
+            <div className="pt-12">
+              <h1>yt-sentiment analysis</h1>
+            </div>
+            <div>2</div>
+          </div>
+        </div>
         <div className="col-span-2"></div>
       </div>
     </>
