@@ -64,8 +64,8 @@ const Home = () => {
                   fall 2023 - flask, golang, mongodb, reactjs, node
                 </div>
                 <div className="pt-4">
-                  worked on bearcat electric vehicle powertrain software -
-                  matlab, new eagle
+                  worked on an electric vehicle's powertrain software @ Bearcat
+                  Motorsports
                 </div>
                 <div className="text-slate-500">
                   {" "}
@@ -84,9 +84,38 @@ const Home = () => {
         <div className="col-span-8">
           <div className="grid grid-cols-2">
             <div className="pt-12">
-              <h1>yt-sentiment analysis</h1>
+              <div className="flex justify-start">
+                <h1>
+                  PROJECTS <br /> <p>YT-sentiment-analysis</p>
+                  <p className="text-slate-500">
+                    express, node, react, youtube api, openai, tailwind
+                  </p>
+                </h1>
+              </div>
             </div>
-            <div>2</div>
+            <div className="pt-12">
+              <div className="flex justify-end">
+                <h1>
+                  <p className="pt-4"></p>
+                  <p>
+                    <a
+                      className="m-2 text-decoration-line: none hover:underline"
+                      target="_blank"
+                      href="https://github.com/AmaanBilwar/"
+                    >
+                      live
+                    </a>
+                    <a
+                      className="text-decoration-line: none hover:underline"
+                      target="_blank"
+                      href="https://github.com/AmaanBilwar/"
+                    >
+                      github
+                    </a>
+                  </p>
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-span-2"></div>
