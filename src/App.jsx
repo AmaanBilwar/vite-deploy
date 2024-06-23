@@ -9,13 +9,22 @@ import Home from "./pages/Home";
 const App = () => {
   return (
     <>
-      <nav>
-        <Link to="/vite-deploy/">Home</Link>
-        {" | "}
-        <Link to="/vite-deploy/About">About</Link>
-        {" | "}
-        <Link to="/vite-deploy/Course">Course</Link>
-      </nav>
+      <div className="flex justify-center pr-20">
+        <nav>
+          <Link to="/vite-deploy/" className="p-12">
+            Home
+          </Link>
+          {" | "}
+          <Link to="/vite-deploy/About" className="p-12">
+            About
+          </Link>
+          {" | "}
+          <Link to="/vite-deploy/Course" className="p-12">
+            Course
+          </Link>
+        </nav>
+      </div>
+
       <Outlet />
     </>
   );
