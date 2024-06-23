@@ -1,11 +1,9 @@
 import React from "react";
+import resume from "../assets/resume.pdf";
+import { Document, Page, pdfjs } from "react-pdf";
 
 const Resume = () => {
-  return (
-    <>
-      <div>Resume</div>
-    </>
-  );
+  return <></>;
 };
 
 export default Resume;
