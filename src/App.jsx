@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
 //import pages
-import Home from "./pages/Home";
 
 const App = () => {
   return (
