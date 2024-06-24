@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Logo from "../assets/headshot-image.png";
 const Home = () => {
   return (
     <>
@@ -10,6 +10,13 @@ const Home = () => {
           <div className="sm:grid grid-cols-2">
             <div className="flex justify-start">
               <h1 className="p-2">Amaan Bilwar</h1>
+              <p>
+                <img
+                  src={Logo}
+                  alt="headshot"
+                  className="rounded-full shadow-none hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 p-2"
+                />
+              </p>
             </div>
             <div className="flex justify-end">
               <Link
