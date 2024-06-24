@@ -1,6 +1,6 @@
 # website is hosted here ;) 
 
-![website link](https://amaanbilwar.github.io/vite-deploy/)
+[website link](https://amaanbilwar.github.io/vite-deploy/)
 
 
 
