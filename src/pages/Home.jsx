@@ -10,7 +10,7 @@ const Home = () => {
             <div></div>
             <div>
               <section>
-                <h1 className="flex justify-start pl-4 text-2xl font-semibold">
+                <h1 className="flex justify-start pl-4 pt-2 text-2xl font-semibold">
                   Amaan Bilwar
                 </h1>
                 <br />
@@ -115,7 +115,7 @@ const Home = () => {
           <div className="grid grid-cols-2">
             <div className="pt-12">
               <div className="flex justify-start">
-                <h1>
+                <h1 className="pl-2">
                   PROJECTS <br /> <p className="pt-4">YT-sentiment-analysis</p>
                   <p className="text-slate-500">
                     express, node, react, youtube api, flask, openai, mongodb,
@@ -136,7 +136,7 @@ const Home = () => {
                     <a
                       className="text-decoration-line: none m-2 hover:underline"
                       target="_blank"
-                      href="https://github.com/AmaanBilwar/"
+                      href="https://github.com/AmaanBilwar/YT-sentiment-analysis"
                     >
                       live
                     </a>
