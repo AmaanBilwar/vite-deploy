@@ -1,9 +1,18 @@
 import React from "react";
-import resume from "../assets/resume.pdf";
-import { Document, Page, pdfjs } from "react-pdf";
 
 const Resume = () => {
-  return <></>;
+  return (
+    <>
+      <div>
+        <h1
+          className="flex justify-center text-slate-400 p-12
+         text-xl"
+        >
+          If you were no directed to my resume, Click on the "Resume" again :)
+        </h1>
+      </div>
+    </>
+  );
 };
 
 export default Resume;

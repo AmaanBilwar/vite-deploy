@@ -2,10 +2,15 @@ import React from "react";
 import logo from "./assets/headshot-image.png";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import Document from "./assets/resume.pdf";
 
 //import pages
 
 const App = () => {
+  const resumeFunction = () => {
+    window.open(Document);
+  };
+
   return (
     <>
       <div className="flex justify-center">
@@ -23,8 +28,9 @@ const App = () => {
           </Link>
           {" | "}
           <Link to="/vite-deploy/Resume" className="p-12">
-            Resume
+            <button onClick={resumeFunction}>Resume</button>
           </Link>
+          <a href="/resume.pdf"></a>
         </nav>
       </div>
 
