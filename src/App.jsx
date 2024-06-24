@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 const App = () => {
   return (
     <>
-      <div className="flex justify-center pr-20">
+      <div className="flex justify-center">
         <nav>
           <Link to="/vite-deploy/" className="p-12">
             Home
@@ -20,6 +20,10 @@ const App = () => {
           {" | "}
           <Link to="/vite-deploy/Course" className="p-12">
             Course
+          </Link>
+          {" | "}
+          <Link to="/vite-deploy/Resume" className="p-12">
+            Resume
           </Link>
         </nav>
       </div>
