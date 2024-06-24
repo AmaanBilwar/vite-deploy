@@ -4,62 +4,85 @@ import Logo from "../assets/headshot-image.png";
 const Home = () => {
   return (
     <>
-      <div className="sm:grid grid-cols-12 ">
-        <div className="sm:col-span-2"></div>
-        <div className=" sm:col-span-8">
-          <div className="sm:grid grid-cols-2">
-            <div className="flex justify-start">
-              <h1 className="p-2">Amaan Bilwar</h1>
-              <p>
-                <img
-                  src={Logo}
-                  alt="headshot"
-                  className="rounded-full shadow-none hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 p-2"
-                />
-              </p>
+      <div>
+        <section>
+          <div className="grid grid-cols-6">
+            <div></div>
+            <div>
+              <section>
+                <h1 className="flex justify-start pl-4 text-2xl font-semibold">
+                  Amaan Bilwar
+                </h1>
+                <br />
+                <p className="flex justify-start">
+                  <img
+                    src={Logo}
+                    alt="headshot"
+                    className="mr-4 h-48 transform rounded-full p-2 shadow-none transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-lg"
+                  />
+                </p>
+              </section>
             </div>
-            <div className="flex justify-end">
-              <Link
-                to="/vite-deploy/Home"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                experience
-              </Link>
-              <Link
-                to="/vite-deploy/About"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                about
-              </Link>
-              <Link
-                to="/vite-deploy/Course"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                course
-              </Link>
-              <Link
-                to="/vite-deploy/Resume"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                resume
-              </Link>
+            <div></div>
+            <div></div>
+            <div>
+              <section className="flex justify-end pt-12">
+                <ul className="grid justify-items-center pr-12">
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/Home"
+                      className="text-decoration-line: none p-2 hover:underline"
+                    >
+                      experience
+                    </Link>
+                  </li>
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/About"
+                      className="text-decoration-line: none p-2 hover:underline"
+                    >
+                      about
+                    </Link>
+                  </li>
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/Course"
+                      className="text-decoration-line: none p-2 hover:underline"
+                    >
+                      course
+                    </Link>
+                  </li>
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/Resume"
+                      className="text-decoration-line: none p-2 hover:underline"
+                    >
+                      resume
+                    </Link>
+                  </li>
+                </ul>
+              </section>
             </div>
+            <div></div>
           </div>
-        </div>
-        <div className="flex justify-end sm:col-span-2"></div>
+        </section>
       </div>
-      <div className="sm:grid grid-cols-12">
+      <br />
+      <br />
+      <hr />
+
+      <div className="grid-cols-12 sm:grid">
         <div className="sm:col-span-2"></div>
         <div className="sm:col-span-8">
           <div className="grid grid-cols-2">
-            <div className="flex  justify-start pl-2 pt-12">
+            <div className="flex justify-start pl-2 pt-12">
               <h1>
                 WORK
                 <br />
                 <div className="pt-6">
                   built a framework architecture @ Honeywell intelligrated
                 </div>
-                <div className=" text-slate-500 ">
+                <div className="text-slate-500">
                   spring 2024 - java, springboot, docker, postgresql, rabbitmq,
                   hazelcast
                 </div>
@@ -111,7 +134,7 @@ const Home = () => {
                   <p className="pt-10"></p>
                   <p>
                     <a
-                      className="m-2 text-decoration-line: none hover:underline"
+                      className="text-decoration-line: none m-2 hover:underline"
                       target="_blank"
                       href="https://github.com/AmaanBilwar/"
                     >
