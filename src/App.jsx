@@ -13,21 +13,45 @@ const App = () => {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center p-4">
         <nav>
-          <Link to="/vite-deploy/" className="p-12">
+          <Link
+            to="/vite-deploy/"
+            className="
+          text-black hover:text-white bg-white hover:bg-black
+          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
+          rounded-full"
+          >
             Home
           </Link>
           {" | "}
-          <Link to="/vite-deploy/About" className="p-12">
+          <Link
+            to="/vite-deploy/About"
+            className="
+          text-black hover:text-white bg-white hover:bg-black
+          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
+          rounded-full"
+          >
             About
           </Link>
           {" | "}
-          <Link to="/vite-deploy/Course" className="p-12">
+          <Link
+            to="/vite-deploy/Course"
+            className="
+          text-black hover:text-white bg-white hover:bg-black
+          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
+          rounded-full"
+          >
             Course
           </Link>
           {" | "}
-          <Link to="/vite-deploy/Resume" className="p-12">
+          <Link
+            to="/vite-deploy/Resume"
+            className="
+          text-black hover:text-white bg-white hover:bg-black
+          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
+          rounded-full"
+          >
             <button onClick={resumeFunction}>Resume</button>
           </Link>
           <a href="/resume.pdf"></a>
