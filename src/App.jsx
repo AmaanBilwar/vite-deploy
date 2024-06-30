@@ -1,10 +1,7 @@
-import React from "react";
-import logo from "./assets/headshot-image.png";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Document from "./assets/resume.pdf";
-
-//import pages
 
 const App = () => {
   const resumeFunction = () => {
@@ -17,47 +14,34 @@ const App = () => {
         <nav>
           <Link
             to="/vite-deploy/"
-            className="
-          text-black hover:text-white bg-white hover:bg-black
-          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
-          rounded-full"
+            className="transform rounded-full bg-white pb-4 pl-6 pr-6 pt-4 text-black duration-200 ease-in-out hover:-translate-y-1 hover:bg-black hover:text-white"
           >
             Home
           </Link>
           {" | "}
           <Link
             to="/vite-deploy/About"
-            className="
-          text-black hover:text-white bg-white hover:bg-black
-          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
-          rounded-full"
+            className="transform rounded-full bg-white pb-4 pl-6 pr-6 pt-4 text-black duration-200 ease-in-out hover:-translate-y-1 hover:bg-black hover:text-white"
           >
             About
           </Link>
           {" | "}
           <Link
             to="/vite-deploy/Course"
-            className="
-          text-black hover:text-white bg-white hover:bg-black
-          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
-          rounded-full"
+            className="transform rounded-full bg-white pb-4 pl-6 pr-6 pt-4 text-black duration-200 ease-in-out hover:-translate-y-1 hover:bg-black hover:text-white"
           >
             Course
           </Link>
           {" | "}
           <Link
             to="/vite-deploy/Resume"
-            className="
-          text-black hover:text-white bg-white hover:bg-black
-          pl-6 pr-6 pt-4 pb-4 ease-in-out duration-200 transform hover:-translate-y-1
-          rounded-full"
+            className="transform rounded-full bg-white pb-4 pl-6 pr-6 pt-4 text-black duration-200 ease-in-out hover:-translate-y-1 hover:bg-black hover:text-white"
           >
             <button onClick={resumeFunction}>Resume</button>
           </Link>
           <a href="/resume.pdf"></a>
         </nav>
       </div>
-
       <Outlet />
     </>
   );
