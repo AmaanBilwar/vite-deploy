@@ -39,7 +39,7 @@ const App = () => {
           >
             <button onClick={resumeFunction}>Resume</button>
           </Link>
-          <a href="/resume.pdf"></a>
+          <a href="../resume.pdf"></a>
         </nav>
       </div>
       <Outlet />
