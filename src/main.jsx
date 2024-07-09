@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Course from "./pages/Course";
 import Resume from "./pages/Resume";
+import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/vite-deploy/Course",
         element: <Course />,
+      },
+      {
+        path: "/vite-deploy/Contact",
+        element: <Contact />,
       },
     ],
   },

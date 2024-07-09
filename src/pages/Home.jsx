@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/headshot-image.png";
+import Logo2 from "../assets/linkedin.png";
+import Logo3 from "../assets/github.png";
+
 const Home = () => {
   return (
     <>
@@ -54,6 +57,14 @@ const Home = () => {
                   </li>
                   <li className="p-2">
                     <Link
+                      to="/vite-deploy/Contact"
+                      className="text-decoration-line: none p-2 hover:underline"
+                    >
+                      contact
+                    </Link>
+                  </li>
+                  <li className="p-2">
+                    <Link
                       to="/vite-deploy/Resume"
                       className="text-decoration-line: none p-2 hover:underline"
                     >
@@ -102,10 +113,9 @@ const Home = () => {
           <div className="flex justify-start">
             <ul className="list-disc">
               <li>
-                Revamped framework architecture, introducing essential
-                versioning protocols for Honeywell’s multifaceted tech
-                environment, while collaborating with interns across different
-                time zones.
+                Revamped framework architecture introducing essential versioning
+                protocols for Honeywell’s multifaceted tech environment, while
+                collaborating with interns across different time zones.
               </li>
               <li>
                 Directed reference architecture development, smoothing new
@@ -288,6 +298,94 @@ const Home = () => {
       <div className="grid grid-cols-3 gap-2">
         <div></div>
         <div className="flex justify-center text-xl">Languages</div>
+        <div></div>
+      </div>
+
+      <div className="grid grid-cols-3">
+        <div></div>
+        <div className="flex justify-center pb-6 text-slate-600">
+          Java, Python, Golang, JavaScript, C/C++, HTML/CSS, SQL, R
+        </div>
+        <div></div>
+      </div>
+
+      <div className="grid grid-cols-3 gap-2">
+        <div></div>
+        <div className="flex justify-center text-xl">Developer Tools</div>
+        <div></div>
+      </div>
+
+      <div className="grid grid-cols-3">
+        <div></div>
+        <div className="flex justify-center pb-6 text-slate-600">
+          Linux, Docker, Redis, Firebase, IntelliJ, Git, Google Cloud Platform,
+          Cloudflare
+        </div>
+        <div></div>
+      </div>
+
+      <div className="grid grid-cols-3 gap-2">
+        <div></div>
+        <div className="flex justify-center text-xl">Frameworks</div>
+        <div></div>
+      </div>
+
+      <div className="grid grid-cols-3">
+        <div></div>
+        <div className="flex justify-center pb-6 text-slate-600">
+          React, Node.js, TypeScript, Flask, FastAPI
+        </div>
+        <div></div>
+      </div>
+      <div className="grid grid-cols-3">
+        <div></div>
+        <div className="flex justify-center pt-6 text-2xl">LEADERSHIP</div>
+        <div></div>
+      </div>
+
+      <div className="grid grid-cols-4 gap-2 pt-12">
+        <div></div>
+        <div>
+          <div className="flex justify-start text-2xl">Bearcat Motorsports</div>
+        </div>
+        <div className="flex justify-end text-slate-400">
+          <Link
+            to="https://github.com/AmaanBilwar/spoti-helper"
+            className="no-underline hover:underline"
+          >
+            Github
+          </Link>
+        </div>
+        <div></div>
+      </div>
+
+      <div className="grid grid-cols-4 gap-2">
+        <div></div>
+        <div>
+          <div className="flex justify-start">
+            <ul>
+              <li>Formula Electric SAE Team</li>
+              <li className="text-slate-600">Powertrain and Electronics</li>
+            </ul>
+          </div>
+        </div>
+        <div className="flex justify-end"></div>
+        <div></div>
+      </div>
+
+      <hr />
+      <br />
+      <br />
+      <div className="grid grid-cols-3">
+        <div></div>
+        <div className="flex justify-center">
+          <a target="_blank" href="https://www.linkedin.com/in/amaanbilwar">
+            <img src={Logo2} className="h-12 w-24" alt="linkedin image" />
+          </a>
+          <a target="_blank" href="https://www.github.com/amaanbilwar">
+            <img src={Logo3} className="h-12 w-12" alt="linkedin image" />
+          </a>
+        </div>
         <div></div>
       </div>
     </>
