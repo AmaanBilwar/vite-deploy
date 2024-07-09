@@ -1,45 +1,72 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/headshot-image.png";
 
 const About = () => {
   return (
     <>
-      <div className="sm:grid grid-cols-12 ">
-        <div className="sm:col-span-2"></div>
-        <div className=" sm:col-span-8">
-          <div className="sm:grid grid-cols-2">
-            <div className="flex justify-start">
-              <h1 className="p-2">Amaan Bilwar</h1>
+      <div>
+        <section>
+          <div className="grid grid-cols-6">
+            <div></div>
+            <div>
+              <section>
+                <h1 className="flex justify-start pl-4 pt-2 text-2xl font-semibold">
+                  Amaan Bilwar
+                </h1>
+                <br />
+                <p className="flex justify-start">
+                  <img
+                    src={Logo}
+                    alt="headshot"
+                    className="mr-4 h-48 transform rounded-full p-2 shadow-none transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-lg"
+                  />
+                </p>
+              </section>
             </div>
-            <div className="flex justify-end">
-              <Link
-                to="/vite-deploy/Home"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                experience
-              </Link>
-              <Link
-                to="/vite-deploy/About"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                about
-              </Link>
-              <Link
-                to="/vite-deploy/Course"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                course
-              </Link>
-              <Link
-                to="/vite-deploy/Resume"
-                className="text-decoration-line: none hover:underline p-2"
-              >
-                resume
-              </Link>
+            <div></div>
+            <div></div>
+            <div>
+              <section className="flex justify-end pt-12">
+                <ul className="grid justify-items-center pr-12">
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/Home"
+                      className="text-decoration-line: p-2 text-gray-950 hover:underline"
+                    >
+                      experience
+                    </Link>
+                  </li>
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/About"
+                      className="text-decoration-line: none p-2 underline"
+                    >
+                      about
+                    </Link>
+                  </li>
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/Course"
+                      className="text-decoration-line: none p-2 hover:underline"
+                    >
+                      course
+                    </Link>
+                  </li>
+                  <li className="p-2">
+                    <Link
+                      to="/vite-deploy/Resume"
+                      className="text-decoration-line: none p-2 hover:underline"
+                    >
+                      resume
+                    </Link>
+                  </li>
+                </ul>
+              </section>
             </div>
+            <div></div>
           </div>
-        </div>
-        <div className="flex justify-end sm:col-span-2"></div>
+        </section>
       </div>
 
       <div className="grid grid-cols-12">
@@ -57,7 +84,7 @@ const About = () => {
             streams, listening to music or scrolling through{" "}
             <Link
               to="https://www.google.com/search?sca_esv=495fc87c0ba59a8e&sca_upv=1&q=cute+puppies&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J03RPjGV0MznOJ6Likin94oGSh4l60tfPppA0C5BN3BoPIPZ4mO02288TWcC6nhc953r-iEY0Fnsc8p63NNuEo-_9lE3vw8_wlWQTOUoJiOaz96h-0idQ3ri-YSm1XM5OrXkpWcQFBioEOqIgZo9k77XCAGMfHUETSSqA9Acuma1rt2NRw&sa=X&ved=2ahUKEwjR2PCisfKGAxXeC3kGHfLUAbsQtKgLegQIGBAB&biw=950&bih=948&dpr=1"
-              className="no-underline hover:underline font-bold"
+              className="font-bold no-underline hover:underline"
               target="_blank"
             >
               cute dog pics.
