@@ -1,8 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { VitePluginRadar } from "vite-plugin-radar";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/vite-deploy/'
-})
+  plugins: [
+    react(),
+    VitePluginRadar({
+      // Google Analytics tag injection
+      analytics: {
+        id: "G-QP9T8W99WN",
+      },
+    }),
+  ],
+  base: "/vite-deploy/",
+});
