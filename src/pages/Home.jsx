@@ -237,6 +237,13 @@ const Home = () => {
           >
             Github
           </Link>
+          <Link
+            target="_blank"
+            to="https://jollyllb-307a945fa636.herokuapp.com/"
+            className="pl-2 no-underline hover:underline"
+          >
+            Live
+          </Link>
         </div>
         <div></div>
       </div>
