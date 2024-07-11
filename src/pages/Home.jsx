@@ -3,8 +3,17 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/headshot-image.png";
 import Logo2 from "../assets/linkedin.png";
 import Logo3 from "../assets/github.png";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [time, updateTime] = useState(new Date());
+  useEffect(() => {
+    // timer updation logic
+    const timer = setInterval(() => {
+      updateTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
   return (
     <>
       <div>
@@ -77,6 +86,11 @@ const Home = () => {
             <div></div>
           </div>
         </section>
+      </div>
+      <br />
+
+      <div className="flex justify-center">
+        <span className="time">{time.toLocaleTimeString()}</span>
       </div>
       <br />
 
